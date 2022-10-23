@@ -6,7 +6,6 @@ function locateCad(cad_arg, subcad){
         positions.push(index);
         index = cad_array.indexOf(subcad, index + 1);
     }
-    // document.write(positions);
     return positions;
 }
 
