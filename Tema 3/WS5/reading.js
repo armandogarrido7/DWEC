@@ -66,7 +66,6 @@ class BookList {
         }
     }
 }
-
 libro1 = new Book('El Quijote', 'Cervantes', 'Historico');
 libro2 = new Book('HP 1', 'J.K Rowling', 'Fantasia');
 libro3 = new Book('Estudio en Escarlata', 'Arthur Conan Doyle', 'Misterio');
