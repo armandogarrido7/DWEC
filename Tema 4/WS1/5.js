@@ -18,17 +18,27 @@ function genera_tabla() {
 }
 
 function changeColour(e) {
-    colour = 'white';
     if (e.ctrlKey)
         e.target.style.backgroundColor = 'red';
     else if (e.shiftKey)
         e.target.style.backgroundColor = 'blue';
-
-
+    else if (e.altKey)
+        e.target.style.backgroundColor = 'white';
 }
 
-genera_tabla();
-let tds = document.getElementsByTagName('td');
-for (i = 0; i < tds.length; i++) {
-    tds[i].addEventListener("mouseover", changeColour)
+function eraseCanvas(e) {
+    let tds = document.getElementsByTagName('td');
+    for (i = 0; i < tds.length; i++) {
+        tds[i].style.backgroundColor = 'white';
+    }
+}
+
+window.onload = ( ) => {
+    boton = document.getElementsByTagName('button')[0];
+    boton.addEventListener('click', eraseCanvas);
+    genera_tabla();
+    let tds = document.getElementsByTagName('td');
+    for (i = 0; i < tds.length; i++) {
+        tds[i].addEventListener("mouseover", changeColour)
+    }
 }

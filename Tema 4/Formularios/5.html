@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="5.js"></script>
+    <style>
+        body {
+            font-family: 'Lucida Sans Unicode';
+        }
+        
+        select {
+            width: 100px;
+            font-family: 'Lucida Sans Unicode';
+        }
+        
+        input[name="card_number_text"] {
+            height: 30px;
+            position: absolute;
+            top: 18vh;
+            left: 3vh;
+            font-size: 35px;
+        }
+        
+        input[name="card_holder_text"] {
+            height: 20px;
+            position: absolute;
+            top: 28vh;
+            left: 3vh;
+            font-size: 22px;
+        }
+        
+        input[name="month"] {
+            height: 18px;
+            width: 28px;
+            position: absolute;
+            top: 25vh;
+            left: 9.2vh;
+            font-size: 16px;
+        }
+        
+        input[name="year"] {
+            height: 18px;
+            width: 25px;
+            position: absolute;
+            top: 25vh;
+            left: 14vh;
+            font-size: 18px;
+        }
+        
+        input {
+            font-family: 'Lucida Sans Unicode';
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        img {
+            width: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="card_number_text" value="#### #### #### ####" size="16">
+        <input type="text" name="card_holder_text" value="FULL NAME" size="20">
+        <input type="text" name="month" value="MM" size="1">
+        <input type="text" name="year" value="YY" size="1">
+
+    </form>
+    <img src="https://www.bbva.es/content/dam/public-web/bbvaes/images/personas/productos/02_tarjetas/productos/credito/tarjeta-despues-oro/2400x1600-tarjeta-despues-oro.png.img.2400.1565700888263.png">
+    <form method="action">
+        <label>
+            Card Number
+            <input type="text" name="card_number" size="40">
+        </label>
+        <label>
+            Card Holder
+            <input type="text" name="card_holder" size="40">
+        </label>
+        <div>
+            <label>
+                Expiration Date
+                <select name="month" placeholder="Month">
+                    <option disabled selected>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="year" placeholder="Year">
+                    <option disabled selected>Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                </select>
+            </label>
+            <label>
+                CVV
+                <input type="text" name="cvv" size="10">
+            </label>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

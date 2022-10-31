@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="3.js"></script>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            font-size: 24px;
+            ;
+            margin: 0 auto;
+            background-color: #EF767A;
+            border: 0;
+            border-bottom: 3px #F6A896 solid;
+            outline: none;
+            text-align: center;
+            color: lightgray;
+        }
+        
+        input[type='submit'] {
+            background-color: #F6A896;
+            color: #EF767A;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        
+        input::placeholder {
+            color: lightgray;
+        }
+        
+        body {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #EF767A;
+            font-family: sans-serif;
+        }
+        
+        ul {
+            margin-left: 10%;
+            color: #F6A896;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" placeholder="username" name="username">
+            <ul>
+                <li id="lower">1 lowercase character</li>
+                <li id="upper">1 uppercase character</li>
+                <li id="min">6 minimun character</li>
+            </ul>
+            <input type="submit" value="Submit" name='submit' disabled>
+        </div>
+    </form>
+</body>
+
+</html>
