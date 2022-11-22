@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Game</title>
+    <script src="pong.js"></script>
+    <style>
+        body{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        svg{
+            background-color:lightgray;
+            border:5px solid black;
+            /* background-image: url(https://cdn.pixabay.com/photo/2014/04/03/10/11/soccer-ball-310065_1280.png); */
+        }
+        rect{
+            border-radius: 5px;
+        }
+        #scoreboard{
+            background-color: lightgray;
+            border-top:5px solid black;
+            border-left:5px solid black;
+            border-right:5px solid black;
+            padding:3vh;
+            font-size: 30px;
+            font-weight: bolder;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #p1_points{
+            color:blue;
+        }
+        #p2_points{
+            color:red;
+        }
+        #ball{
+            background-image: url(https://cdn.pixabay.com/photo/2014/04/03/10/11/soccer-ball-310065_1280.png);
+        }
+
+    </style>
+    </head>
+  <body>
+    <h1>Ping Pong Game</h1>
+    <div id="scoreboard"><span id="p1_points">0</span>:<span id="p2_points">0</span></div>
+    <svg id="stage" width="1000" height="500">
+        <rect id="player1" width="10" height="50" x="10" y="225" fill="blue" ></rect>
+        <circle  id="ball" r="15"></circle>
+        <rect id="player2" width="10" height="50" x="980" y="225" fill="red" ></rect>
+    </svg>
+  </body>
+</html>
