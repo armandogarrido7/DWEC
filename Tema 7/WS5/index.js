@@ -151,8 +151,8 @@ class Controller {
 
     static showAllTasks() {
         let tasks = Controller.getAllTasks();
-        tasks.sort(Controller.orderTasks);
         if (tasks) {
+            tasks.sort(Controller.orderTasks);
             for (let task of tasks) {
                 this.showTask(task);
             }
